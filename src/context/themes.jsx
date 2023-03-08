@@ -19,11 +19,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: Open-Sans, Helvetica, Sans-Serif;
     background-color: var(--light);
-    @media (min-width: 768px) {
-      
-      /* background:  linear-gradient(0.25turn, grey 0%, white 10%, white 90%, grey); */
-    }
-    
+  }
+
+  #root{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 `;
  
