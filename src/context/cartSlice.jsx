@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { useEffect } from 'react';
 
 const initialState = {
   products: [],
@@ -45,7 +44,7 @@ export const cartSlice = createSlice({
       state.totalItems =  state.products.reduce((sum, {quantity}) =>{ return sum + (quantity)}, 0)
       state.total = state.products.reduce((sum, {quantity, discountedPrice}) =>{ return sum + (quantity * discountedPrice)}, 0)
     },
-    clearCart: (state, action) => {
+    clearCart: (state) => {
       state.products = [];
       state.total = 0
       state.totalItems = 0

@@ -27,18 +27,19 @@ export const ProductImage = styled.img`
 export const ProductLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 600;
   padding: 0.8rem;
   width: fit-content;
 
   margin: 1rem auto;
-  background-color: darkblue;
+  background-color: var(--secondary);
   transition: all 0.5s;
   border-radius: 1rem;
   box-sizing: border-box;
   :hover {
-    color: darkblue;
     background-color: white;
+    border: 1px solid var(--secondary);
   }
 `;
 
