@@ -21,7 +21,7 @@ export function Header() {
         <MainLinksContainer display={display}>
           <NavLinks to="/">Home</NavLinks>
           <NavLinks to="/products">Products</NavLinks>
-          <NavLinks to="/contact">Contact Us</NavLinks>
+          <NavLinks to="/contact">Contact</NavLinks>
         </MainLinksContainer>
         <CartIcon to="/cart"><CartImage src={Cart}/>Cart</CartIcon>
       </Navigation>
