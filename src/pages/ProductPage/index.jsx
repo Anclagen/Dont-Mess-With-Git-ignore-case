@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom"
+import {useParams } from "react-router-dom"
 import { baseURL } from "../../utilities/constants";
 import { useAPI } from "../../hooks/API";
 import { updateHead } from "../../utilities/updateHead";

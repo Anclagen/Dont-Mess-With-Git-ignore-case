@@ -5,7 +5,7 @@ import  ProductCardLoader  from "../../components/ProductLoader";
 import { Banner, HomeHeading, ProductGrid, PageWrapper, Main, FilterContainer,Filter, HiddenLabel} from "./styles";
 import bannerImage from "../../assets/banner.jpg"
 import { updateHead } from "../../utilities/updateHead";
-import { search } from "../../utilities/search";
+//import { search } from "../../utilities/search";
 
 function Products() { 
   const {data, isLoading, isError} = useAPI(baseURL);
