@@ -1,7 +1,7 @@
 import { baseURL } from "../../utilities/constants";
 import { useAPI } from "../../hooks/API";
-import { ProductCard } from "../../components/product/productCard";
-import { ProductCardLoader } from "../../components/productLoader";
+import  ProductCard  from "../../components/ProductCard";
+import  ProductCardLoader  from "../../components/ProductLoader";
 import { Banner, HomeHeading, ProductGrid, PageWrapper, Main, FilterContainer,Filter, HiddenLabel} from "./styles";
 import bannerImage from "../../assets/banner.jpg"
 import { updateHead } from "../../utilities/updateHead";
@@ -11,7 +11,6 @@ function Products() {
   const {data, isLoading, isError} = useAPI(baseURL);
   if(!isLoading){
     console.log(data)
-    console.log(search(data, "black"))
   }
 
   if (isLoading) {
@@ -33,7 +32,7 @@ function Products() {
   );
 }
 
-function Home(){
+export default function Home(){
   updateHead("TechBeauty | Home", "TechBeauty an e-commerce website, selling a range of items from beauty and fashion product to audio and computer equipment.")
 
   return(
@@ -63,5 +62,3 @@ function Home(){
     </Main>
   )
 }
-
-export default Home

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ProductContainer, ProductHeading, ProductImage, ProductLink } from "./productCard.styles";
+import { ProductContainer, ProductHeading, ProductImage, ProductLink } from "./styles";
 
-export function ProductCard({product}){
-  const {id, title, imageUrl, price, discountedPrice, rating, tags, reviews, description} = product
+export default function ProductCard({product}){
+  //const {id, title, imageUrl, price, discountedPrice, rating, tags, reviews, description} = product
+  const {id, title, imageUrl, price, discountedPrice} = product
   return(
     <ProductContainer>
       <ProductImage src={imageUrl} alt={title}/>

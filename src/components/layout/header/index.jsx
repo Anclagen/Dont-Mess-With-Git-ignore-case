@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
-import { HeaderStyles, Navigation, NavLinks, MainLinksContainer, MenuIcon, CartIcon, CartImage } from "./styles";
-import { Logo } from "../../logo";
-import Cart from "../../../assets/shopping_cart.png"
+import { HeaderStyles, Navigation, NavLinks, MainLinksContainer, MenuIcon} from "./styles";
+import Cart  from "../Cart";
+import Logo  from "../../Logo";
 
-export function Header() {
+
+export default function Header() {
   const [display, toggleOpen] = useState("none");
   
   function onButtonClick() {
@@ -20,10 +20,9 @@ export function Header() {
         </MenuIcon>
         <MainLinksContainer display={display}>
           <NavLinks to="/">Home</NavLinks>
-          <NavLinks to="/products">Products</NavLinks>
           <NavLinks to="/contact">Contact</NavLinks>
         </MainLinksContainer>
-        <CartIcon to="/cart"><CartImage src={Cart}/>Cart</CartIcon>
+        <Cart />
       </Navigation>
     </HeaderStyles>
   );

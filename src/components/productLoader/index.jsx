@@ -1,6 +1,6 @@
 import { ProductLoaderContainer, ProductLoaderImage, ProductLoaderHeading, ProductLoaderPrice, ProductLoaderButton } from "./styles";
 
-export function ProductCardLoader() {
+export default function ProductCardLoader() {
   return (
     <ProductLoaderContainer>
       <ProductLoaderImage/>
